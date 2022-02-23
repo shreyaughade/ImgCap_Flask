@@ -1,2 +1,1 @@
 web: gunicorn app:imgcap-api
-web: gunicorn run:imgcap-api
