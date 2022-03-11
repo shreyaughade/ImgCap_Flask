@@ -8,7 +8,7 @@ app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 
 @app.route("/")
 def home():
-  print("Hello")
+  return jsonify({"Message":"Hello"})
 
 @app.route("/uploadImage", methods=["POST"])
 def upload():
