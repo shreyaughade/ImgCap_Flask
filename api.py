@@ -6,6 +6,9 @@ UPLOAD_FOLDER = os.getcwd() + "/images"
 app = Flask(__name__)
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 
+@app.route("/")
+def home():
+  print("Hello")
 
 @app.route("/uploadImage", methods=["POST"])
 def upload():
